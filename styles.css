@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #f4f4fc;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+}
+.header__logo{
+    width: 7%;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+.main{
+    width: 90%; 
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.main__contenido{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding-left: 100px;
+    width: 60%;
+    height: 100%;
+    
+}
+
+.main__contenido__texto{
+    font-size: 2rem;
+    color: #0A3871;
+    border: none;
+    margin:2%;
+
+}
+::placeholder{
+    color: #0A3871;
+}
+
+.main__resultado{
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    color: #0A3871;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    box-sizing: border-box;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
+   
+}
+.main__resultado__texto{
+    width: 80%;
+    height: 100%;
+    border: none;
+    background-color: #f4f4fc;
+    cursor: pointer;
+    color: #0A3871;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    background-image: url();
+    
+}
+
+.main__contenido__btn{
+    display: flex;
+    gap: 24px;
+    margin: 2%;
+    
+}
+
+.main__contenido__btn__encriptar{
+    background-color: #0A3871;
+    color: #FFFFFF;
+    width: 50%;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+    padding: 21.5px;
+}
+.main__contenido__btn__desencriptar{
+    background-color: #D8DFE8;
+    padding: 21.5px;
+    width: 50%;
+    border-radius: 24px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+}
+
+.main__resultado{
+    width: 30%;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 32px;
+}
+
+#result{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    height: 80%;
+}
+
+.contenedormunieco{
+    box-sizing: border-box;
+    margin:auto;
+}
+
+.contenedor-parrafo{
+    box-sizing: border-box;
+ }
+
+ .contenedor-parrafo h3{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: #343A40;
+}
+
+.contenedor-parrafo p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #495057;
+    padding-top: 20px;
+}
+
+.contenedor-resultado{
+    box-sizing: border-box;
+    margin-left: 25px;
+}
+
+
+
+.contenedor-copiar{
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+    align-items: center;
+    
+}
+
+.btn-copiar{
+    border-radius: 24px;
+    background-color: #ffffff;
+    color: #0A3871;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+    width: 100%;
+    padding: 21.5px;
+    margin:2%;
+    position: relative;
+}
+
+
+footer{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    text-align: center;
+    font-size: 1.5rem;;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    padding:30px 0 30px 0;
+    width: 100%;
+    margin-top: auto;
+    
+}
+
+/*Diseño responsivo*/
+
+@media (max-width: 768px){
+
+    .header__logo{
+        width: 10%;
+    }
+
+    .main{
+
+       flex-direction:column;
+       justify-content: center;
+       width: 100%;
+       height: 100%;
+       
+       
+    }
+
+
+    .main__contenido{
+        padding: 0%;
+        margin: auto;
+        justify-content: center;
+        width: 90%;
+        font-size: 0,5rem;
+       
+    }
+    .contenedormunieco{
+        top: 0;
+    display: none;
+    visibility: hidden;
+    }
+
+    .main__resultado{
+      width: 100%;
+      padding: 5%;
+    }
+   
+}
+
+@media (max-width: 376px){
+
+    .header__logo{
+        width: 10%;
+    }
+
+    .main__contenido__btn{
+        flex-direction: column;
+
+    }
+    .main__contenido__btn__encriptar{
+        width: 100%;
+    }
+
+    .main__contenido__btn__desencriptar{
+        width: 100%;
+    }
+}
+

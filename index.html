@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header class="header">
+         <img class="header__logo" src="/img/Logo.png" alt="imagen logo">       
+    </header>
+    <main class="main">
+        <section class="main__contenido">
+            <textarea id="textarea" class="main__contenido__texto" cols="30" rows="10" name="" id="" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="main__contenido__condiciones"><h6>Solo letras minúsculas y sin acentos</h6></div>
+            <div class="main__contenido__btn">
+                <button id="encriptar"  onclick="comprobar_texto_encriptado()" class="main__contenido__btn__encriptar">Encriptar</button>
+                <button id="desencriptar"  onclick="comprobar_texto_desencriptado()" class="main__contenido__btn__desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="main__resultado">
+            <div id="result">
+            </div>
+                <img id="image" class="contenedormunieco" src="/img/Muneco.png" alt="muñico">
+            <div class="contenedor-parrafo">
+                <h3 id="text-default1">Nigún mensaje fue encontrado</h3>
+                <p id="text-default2">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="contenedor-copiar">
+                <button id="btn-copy" class="btn-copiar" onclick="copiar_al_portapapeles()"> Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+            <h5>Desarrollado por Iris Zamora</h2>    
+    </footer>
+
+    <script src="scrip.js"></script>
+</body>
+</html>
